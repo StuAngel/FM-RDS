@@ -1,4 +1,4 @@
-// based on https://en.wikipedia.org/wiki/Radio_Data_System#Message_version_B
+// based on https://en.wikipedia.org/wiki/Radio_Data_System
 
 function rds()
 {
