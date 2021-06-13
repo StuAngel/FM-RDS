@@ -1,5 +1,5 @@
 # FM-RDS
-a simple implementation of FM RDS in Javascript, 
+a simple implementation of FM RDS (Radio Data System) in Javascript, 
 
 I am currently working with a USB FM tuner and required the use of the "Radio Data System", this is what displays the current station and misc text they broadcast, I also see timestamp and application data but have not implemented those interfaces
 
