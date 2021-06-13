@@ -5,7 +5,7 @@ I am currently working with a USB FM tuner and required the use of the "Radio Da
 
 usage
 
-var rdsObject = new rds();
+var rdsObject = new rds();<br />
 /*
   Sender is the RDS object itself
   Text is the text that has just been modified
