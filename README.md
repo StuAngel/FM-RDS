@@ -12,12 +12,12 @@ var rdsObject = new rds();\
 rdsObject.onUpdate(function(sender, text, target)\
 {
 
-/*
-&nbsp;&nbsp;Sender is the RDS object itself\
-&nbsp;&nbsp;Text is the text that has just been modified\
-&nbsp;&nbsp;Target:\
-&nbsp;&nbsp;&nbsp;&nbsp;text - text sent by the station, may include weather reports etc.\
-&nbsp;&nbsp;&nbsp;&nbsp;station - normally the name of the radio station\
+/*\
+&nbsp;&nbsp;&nbsp;&nbsp;Sender is the RDS object itself\
+&nbsp;&nbsp;&nbsp;&nbsp;Text is the text that has just been modified\
+&nbsp;&nbsp;&nbsp;&nbsp;Target:\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text - text sent by the station, may include weather reports etc.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;station - normally the name of the radio station\
 */
 
 &nbsp;&nbsp;console.log(target+": "+text);\
@@ -29,7 +29,7 @@ in my case
 
 setInterval(function()\
 {\
-&nbsp;&nbsp;usbdevice.put(this.put([0x03, tuner_band.FM, 0x82, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00], function()\
+&nbsp;&nbsp;usbdevice.put([0x03, 0x32, 0x82, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00], function()\
 &nbsp;&nbsp;{\
 &nbsp;&nbsp;&nbsp;&nbsp;/* arguments[1] being an array of uShort representing Group A, Group B, Group C, Group D */
 &nbsp;&nbsp;&nbsp;&nbsp;rdsObject._rds.analyseframes(arguments[1]);\
