@@ -31,7 +31,7 @@ setInterval(function()\
 {\
 &nbsp;&nbsp;usbdevice.put([0x03, 0x32, 0x82, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00], function()\
 &nbsp;&nbsp;{\
-&nbsp;&nbsp;&nbsp;&nbsp;/* arguments[1] being an array of uShort representing Group A, Group B, Group C, Group D */
+&nbsp;&nbsp;&nbsp;&nbsp;/* arguments[1] being an array of uShort representing Group A, Group B, Group C, Group D */\
 &nbsp;&nbsp;&nbsp;&nbsp;rdsObject._rds.analyseframes(arguments[1]);\
 &nbsp;&nbsp;});\
 }, 50);
